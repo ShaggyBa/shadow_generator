@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="style/style.css" type="text/css">
+	<title>Shadow Generator</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<h1>Shadow Generator</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-4 col-md-6">
+					<div class="card">
+						<div class="card-header bg-primary">Настройки</div>
+						<div class="card-body">
+							<label for="font-size">Размер шрифта: <span></span></label>
+							<input type="range" min="8" max="40" step="1" value="40" id="font-size" class="custom-range">
+							<label for="offset_x">Смещение по оси х: <span></span></label>
+							<input type="range" min="-15" max="15" step="1" value="4" id="offset_x" class="custom-range">
+							<label for="offset_y">Смещение по оси у: <span></span></label>
+							<input type="range" min="-15" max="15" step="1" value="-1" id="offset_y" class="custom-range">
+							<label for="blur">Размытие: <span></span></label>
+							<input type="range" min="0" max="15" step="1" value="0" id="blur" class="custom-range">
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6">
+					<div class="card">
+						<div class="card-header bg-primary">Цвет</div>
+						<div class="card-body">
+							<input type="color" value="#ff0000" id="HEX">
+							<label for="opacity">Прозрачность:</label>
+							<input type="range" min="0" max="1" step="0.01" value="1" id="opacity" class="custom-range">
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-12">
+					<div class="card">
+						<div class="card-header bg-primary">Результат</div>
+						<div class="card-body">
+							<label for="resultHex">Цвет в HEX</label>
+							<textarea id="resultHex" rows="3" readonly></textarea>
+							<label for="resultRGB">Цвет в RGB</label>
+							<textarea id="resultRGB" rows="3" readonly></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="script/jQuery.js"></script>
+	<script src="script/script.js"></script>
+</body>
+
+</html>
