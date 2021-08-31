@@ -1,2 +1,2 @@
-# shadow_generator
+# shadowGenerator
 Shadow Generator
